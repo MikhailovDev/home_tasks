@@ -7,8 +7,8 @@ struct Node {
 };
 
 struct Queue {
-    Node* front{};
-    Node* back{};
+    Node* front;
+    Node* back;
 };
 
 #endif
