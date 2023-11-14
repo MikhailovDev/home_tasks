@@ -15,12 +15,12 @@ int main(void) {
     int choise{ -1 };
     do {
         printActions();
-        cout << "Âàø âûáîð: ";
+        cout << "Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
         cin >> choise;
 
         switch (choise) {
         case 1:
-            cout << "Ââåäèòå ÷èñëî: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
             int n;
             cin >> n;
             push(&queue, n);
@@ -30,24 +30,24 @@ int main(void) {
             break;
         case 3:
             if (!isEmpty(queue->front)) {
-                std::cout << "Ïåðâûé ýëåìåíò î÷åðåäè: " << getFront(queue)
+                std::cout << "ÐŸÐµÑ€Ð²Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: " << getFront(queue)
                     << endl;
             }
             else {
-                std::cout << "Î÷åðåäü ïóñòà." << endl;
+                std::cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿ÑƒÑÑ‚Ð°." << endl;
             }
             break;
         case 4:
             if (!isEmpty(queue->back)) {
-                std::cout << "Ïîñëåäíèé ýëåìåíò î÷åðåäè: " << getBack(queue)
+                std::cout << "ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: " << getBack(queue)
                     << endl;
             }
             else {
-                std::cout << "Î÷åðåäü ïóñòà." << endl;
+                std::cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿ÑƒÑÑ‚Ð°." << endl;
             }
             break;
         case 5:
-            std::cout << "Êîëè÷åñòâî ýëåìåíòîâ â î÷åðåäè: "
+            std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: "
                 << getSize(queue->front) << endl;
             break;
         case 6:
@@ -55,7 +55,7 @@ int main(void) {
                 print(queue->front);
             }
             else {
-                std::cout << "Î÷åðåäü ïóñòà." << endl;
+                std::cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿ÑƒÑÑ‚Ð°." << endl;
             }
 
             break;
