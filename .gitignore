@@ -363,3 +363,9 @@ _themes.VS.Modern/
 
 # Custom added by ghogen
 settings.json
+
+# My files
+*sln
+*vcxproj
+
+

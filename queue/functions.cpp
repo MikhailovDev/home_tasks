@@ -46,7 +46,7 @@ int getBack(Queue* queue) {
 }
 
 int getSize(Node* node) {
-    int i{};
+    int i {};
 
     while (node != NULL) {
         i++;
