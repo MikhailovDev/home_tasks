@@ -10,7 +10,7 @@ int main(void) {
 
     using std::cout, std::cin, std::endl;
 
-    Queue* queue = new Queue;
+    Queue* queue = new Queue {};
 
     int choise{ -1 };
     do {
