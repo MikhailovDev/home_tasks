@@ -9,16 +9,16 @@ bool isEmpty(Node* node) {
 void push(Queue** queue, int data) {
     Node* tmp = new Node;
     tmp->data = data;
-    tmp->next = (*queue)->front;
+    tmp->next = nullptr;
 
-    if (!isEmpty((*queue)->front)) {
-        (*queue)->front->previous = tmp;
+    if (!isEmpty((*queue)->back)) {
+        (*queue)->back->next = tmp;
     }
 
-    (*queue)->front = tmp;
+    (*queue)->back = tmp;
 
-    if (isEmpty((*queue)->back)) {
-        (*queue)->back = tmp;
+    if (isEmpty((*queue)->front)) {
+        (*queue)->front = tmp;
     }
 }
 
