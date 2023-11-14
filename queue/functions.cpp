@@ -23,14 +23,12 @@ void push(Queue** queue, int data) {
 }
 
 void remove(Queue** queue) {
-    if (!isEmpty((*queue)->back)) {
-        Node* tmp = (*queue)->back;
+    if (!isEmpty((*queue)->front)) {
+        Node* tmp = (*queue)->front;
 
-        if (!isEmpty(tmp->previous)) {
-            (*queue)->back = tmp->previous;
-            tmp->previous->next = nullptr;
-        }
-        else {
+        if (!isEmpty(tmp->next)) {
+            (*queue)->front = tmp->next;
+        } else {
             (*queue)->front = nullptr;
             (*queue)->back = nullptr;
         }
